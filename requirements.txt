@@ -2,7 +2,7 @@
 # Install with: pip install -r requirements.txt
 
 # Core scientific stack
-ase>=3.22
+ase>=3.26
 numpy>=1.23
 scipy>=1.9
 matplotlib>=3.6
