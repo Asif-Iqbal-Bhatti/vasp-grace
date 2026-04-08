@@ -13,6 +13,9 @@
 - **Molecular Dynamics (MD) Simulations**  
   Enables MD simulations through ASE with GRACE potentials.
 
+- **Phonon and elastic constants**  
+  TBD
+
 ## **GENERATED FILES**
 - **Standard Output Files**  
   Generates `OUTCAR`, `OSZICAR`, and `CONTCAR` files in VASP-like formats for downstream compatibility and analysis.
