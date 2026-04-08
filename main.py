@@ -2,13 +2,13 @@ import os
 import sys
 import argparse
 from ase.io import read
-from ase.optimize import LBFGS, FIRE
+from ase.optimize import LBFGS, FIRE2
 from ase.filters import FrechetCellFilter
 
 from tensorpotential.calculator.foundation_models import grace_fm
 from tensorpotential.calculator import TPCalculator
 
-from .writer import VaspWriterObserver, write_vasp_single_point, safe_get_stress
+from writer import VaspWriterObserver, write_vasp_single_point, safe_get_stress
 
 def parse_incar(filepath="INCAR"):
     """Parse the VASP INCAR file for relaxation params & GRACE configurations."""
@@ -17,7 +17,7 @@ def parse_incar(filepath="INCAR"):
         "NSW": 0,
         "ISIF": 2,
         "EDIFFG": -0.01,
-        "GRACE_MODEL": "GRACE-1L-OMAT-medium-ft-E" # Default GRACE model fallback
+        "GRACE_MODEL": "GRACE-2L-OMAT" # Default GRACE model fallback
     }
     if os.path.exists(filepath):
         with open(filepath, "r") as f:
@@ -110,7 +110,7 @@ def main():
         if ibrion == 1:
             optimizer = LBFGS(opt_target, trajectory='grace_opt.traj', logfile='grace_opt.log')
         else:
-            optimizer = FIRE(opt_target, trajectory='grace_opt.traj', logfile='grace_opt.log')
+            optimizer = FIRE2(opt_target, trajectory='grace_opt.traj', logfile='grace_opt.log')
             
         # Attach observer to mock VASP file generation sequentially 
         observer = VaspWriterObserver(atoms)
