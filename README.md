@@ -1,6 +1,6 @@
 # vasp-grace
 
-**vasp-grace** is a lightweight Python interface that enables the use of **GRACE Machine Learning Potentials** as a drop-in replacement for the VASP executable. By emulating VASP’s input/output behavior, it integrates seamlessly with established atomistic simulation workflows (e.g., Phonopy, ... ) that rely on VASP-compatible formats.
+**vasp-grace** is a lightweight Python interface that enables the use of **GRACE Machine Learning Potentials** as a drop-in replacement for the VASP executable. By emulating VASP’s input/output behavior, it integrates seamlessly with established atomistic simulation workflows that rely on VASP-compatible formats.
 
 ## Key Features
 
