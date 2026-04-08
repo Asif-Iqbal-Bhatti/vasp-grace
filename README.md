@@ -14,7 +14,7 @@
   Enables MD simulations through ASE with GRACE potentials.
 
 - **Phonon and elastic constants**  
-  TBD
+  Enabels Phonon calculation Band Strucutre and Density of States via ASE Phonon module.
 
 ## **Generated Files**
 - **Standard Output Files**  
