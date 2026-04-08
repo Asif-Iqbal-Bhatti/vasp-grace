@@ -1,0 +1,28 @@
+ALGO = Normal
+EDIFF = 1e-06
+EDIFFG = -0.01
+ENCUT = 520.0
+ISMEAR = 0
+ISPIN = 1
+ISYM = 0
+LASPH = True
+LCHARG = False
+LORBIT = 11
+LPLANE = True
+LREAL = False
+LVTOT = False
+LWAVE = False
+NCORE = 8
+NELM = 100
+
+PREC = Accurate
+SIGMA = 0.05
+SYMPREC = 1e-08
+
+IBRION = 6
+NFREE = 2
+NSW = 1
+POTIM = 0.015
+ISIF = 3
+LPHON_DISPERSION = True
+PHON_DOS = 1
