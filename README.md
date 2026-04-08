@@ -10,20 +10,15 @@
 - **Geometry Optimization**  
   Implements structural optimization via ASE, with support for common VASP tags such as `IBRION` and `ISIF`.
 
-- **Standard Output Files**  
-  Generates `OUTCAR`, `OSZICAR`, and `CONTCAR` files in VASP-like formats for downstream compatibility and analysis.
-
 - **Molecular Dynamics (MD) Simulations**  
   Enables MD simulations through ASE with GRACE potentials.
 
-- **High-Performance Backend**  
-  Utilizes the GRACE `tensorpotential` ASE calculator, with optional GPU acceleration via TensorFlow for efficient large-scale simulations.
+** GENERATED FILES **
+- **Standard Output Files**  
+  Generates `OUTCAR`, `OSZICAR`, and `CONTCAR` files in VASP-like formats for downstream compatibility and analysis.
 
 ## Installation
 
-It is recommended to install **vasp-grace** within a dedicated Python environment:
-
-```bash
 uv pip install numpy tensorflow
 uv pip install tensorpotential
 uv pip install git+https://gitlab.com/ase/ase.git
