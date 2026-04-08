@@ -6,6 +6,7 @@
 - **Direct VASP Compatibility:** Reads standard `POSCAR` and `INCAR` files.
 - **Geometry Optimization:** Supports VASP's `IBRION` and `ISIF` tags for structural optimization natively via ASE.
 - **Output Generation:** Writes standard `OUTCAR`, `OSZICAR`, and `CONTCAR` files mimicking VASP output structures.
+- **MD SIMULATION USING ASE
 - **Backend:** Native Python integration using the GRACE `tensorpotential` ASE calculator (GPU accelerated via TensorFlow).
 
 ## Installation
